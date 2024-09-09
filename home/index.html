@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アニメ『ハイキュー!!』公式サイト</title>
+    <style>
+        /* 全体のスタイル設定 */
+        body {
+            font-family: Arial, sans-serif; /* フォントの指定 */
+            line-height: 1.6; /* 行の高さの設定 */
+            margin: 0; /* デフォルトのマージンを削除 */
+            padding: 0; /* デフォルトのパディングを削除 */
+            color: #333; /* 文字色の設定 */
+            display: flex; /* フレックスボックスでレイアウトを管理 */
+            flex-direction: column; /* 縦に並べる */
+        }
+        /* ヘッダーのスタイル設定 */
+        header {
+            background: #000000; /* 背景色の設定 */
+            color: #fff; /* 文字色の設定 */
+            padding: 20px; /* 内部の余白設定 */
+            text-align: center; /* テキストを中央に配置 */
+            position: fixed; /* 固定位置に設定 */
+            width: calc(100% - 175px); /* ナビゲーションの幅を考慮して幅を設定 */
+            top: 0; /* 上端に配置 */
+            left: 0; /* 左端に配置 */
+            z-index: 1100; /* 他の要素の上に表示 */
+        }
+        header h1 {
+            margin: 0; /* マージンを削除 */
+        }
+        /* 画像コンテナのスタイル設定 */
+        .image-container {
+            position: fixed; /* 固定位置に設定 */
+            top: 0; /* 上端に配置 */
+            left: 0; /* 左端に配置 */
+            width: 175px; /* ナビゲーションと同じ幅 */
+            height: 100vh; /* ビューポートの高さに合わせる */
+            z-index: 1050; /* ヘッダーより下、ナビゲーションより上 */
+        }
+        .image-container img {
+            width: 123%; /* 画像の幅を調整 */
+            height: auto; /* アスペクト比を保つ */
+        }
+        /* ナビゲーションのスタイル設定 */
+        nav {
+            background: #ff7300; /* 背景色の設定 */
+            color: #fff; /* 文字色の設定 */
+            height: 100vh; /* ビューポートの高さに合わせる */
+            width: 175px; /* 固定幅に設定 */
+            position: fixed; /* 固定位置に設定 */
+            top: 40px; /* ヘッダーの下に配置 */
+            left: 0; /* 左端に配置 */
+            display: flex; /* フレックスボックスでレイアウトを管理 */
+            flex-direction: column; /* 縦に並べる */
+            padding: 20px; /* 内部の余白設定 */
+            z-index: 1000; /* ヘッダーや画像より下 */
+        }
+        nav a {
+            color: #000000; /* リンクの文字色設定 */
+            text-decoration: none; /* 下線を削除 */
+            display: block; /* ブロック要素として表示 */
+            margin: 10px 0; /* 上下にマージン設定 */
+            font-weight: bold; /* 太字に設定 */
+        }
+        nav a:hover {
+            text-decoration: underline; /* ホバー時に下線を表示 */
+        }
+        /* コンテンツコンテナのスタイル設定 */
+        .content-container {
+            margin-left: 200px; /* ナビゲーションの幅を考慮して左側にマージン設定 */
+            padding: 20px; /* 内部の余白設定 */
+            width: calc(100% - 195px); /* ナビゲーションとパディングを考慮して幅を設定 */
+            margin-top: 0px; /* ヘッダーの高さを考慮して上マージン設定 */
+            margin-bottom: 50px; /* フッターの高さを考慮して下マージン設定 */
+        }
+        .content h2 {
+            color: #ff7300; /* 見出しの文字色設定 */
+        }
+        /* フッターのスタイル設定 */
+        footer {
+            background: #f4f4f4; /* 背景色の設定 */
+            padding: 10px 0; /* 内部の余白設定 */
+            text-align: center; /* テキストを中央に配置 */
+            position: fixed; /* 固定位置に設定 */
+            width: calc(100% - 175px); /* ナビゲーションの幅を考慮して幅を設定 */
+            bottom: 0; /* 下端に配置 */
+            left: 0; /* 左端に配置 */
+            z-index: 1000; /* ナビゲーションより上 */
+        }
+        footer p {
+            margin: 0; /* マージンを削除 */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <!-- 紹介画像を表示するコンテナ -->
+        <img src="/students/G202503_11/Anime/titlelogo.png" alt="紹介画像">
+    </div>
+
+    <nav>
+        <!-- ナビゲーションリンク -->
+        <a href="http://18.178.60.234/students/G202503_11/Anime">a</a>
+        <a href="http://18.178.60.234/students/G202503_11/Anime">b</a>
+        <a href="http://18.178.60.234/students/G202503_11/Anime">c</a>
+
+        <a href="http://18.178.60.234/students/G202503_11/NEWS">NEWS</a>
+        <a href="">GOODS</a>
+        <a href="">COMICS</a>
+        <a href="">PACKGE</a>
+        <a href="">ONDEMAND</a>
+        <a href="">OFFICIAL X</a>
+        <a href="">MOVIE</a>
+        <a href="">SEASON 4</a>
+        <a href="">SEASON 3</a>
+        <a href="">SEASON 2</a>
+        <a href="">SEASON 1</a>
+    </nav>
+
+    <div class="content-container">
+        <!-- コンテンツエリア -->
+        <h2>home</h2>
+    </div>
+</body>
+</html>

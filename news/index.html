@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アニメ『ハイキュー!!』公式サイト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: calc(100% - 175px); /* Adjust based on nav width */
+            top: 0;
+            left: 0; /* Align header with the left edge */
+            z-index: 1100; /* Higher z-index to be above nav */
+        }
+        header h1 {
+            margin: 0;
+        }
+        .image-container {
+            position: fixed;
+            top: 0; /* Adjust to position the image below the header */
+            left: 0;
+            width: 175px; /* Same as nav width */
+            height: 100vh; /* Full height of viewport */
+            z-index: 1050; /* Below header but above nav */
+        }
+        .image-container img {
+            width: 123%;
+            height: auto; /* Maintain aspect ratio */
+        }
+        nav {
+            background: #ff7300;
+            color: #fff;
+            height: 100vh;
+            width: 175px;
+            position: fixed;
+            top: 40px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            z-index: 1000; /* Lower z-index so it stays below header and image */
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content-container {
+            margin-left: 200px; /* Adjust based on the width of your nav */
+            padding: 20px;
+            width: calc(100% - 195px); /* Adjust based on the width of your nav and padding */
+            margin-top: 0px; /* Adjust based on header height */
+            margin-bottom: 50px; /* Adjust based on footer height */
+        }
+        .content h2 {
+            color: #ff7300;
+        }
+        footer {
+            background: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: calc(100% - 175px); /* Adjust based on nav width */
+            bottom: 0;
+            left: 0; /* Align footer with the left edge */
+            z-index: 1000;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="/students/G202503_11/Anime/titlelogo.png" alt="紹介画像">
+    </div>
+
+    <nav>
+        <a href="http://18.178.60.234/students/G202503_11/Anime">a</a>
+        <a href="http://18.178.60.234/students/G202503_11/Anime">b</a>
+        <a href="http://18.178.60.234/students/G202503_11/Anime">c</a>
+
+        <a href="http://18.178.60.234/students/G202503_11/NEWS">NEWS</a>
+        <a href="">GOODS</a>
+        <a href="">COMICS</a>
+        <a href="">PACKGE</a>
+        <a href="">ONDEMAND</a>
+        <a href="">OFFICIAL X</a>
+        <a href="">MOVIE</a>
+        <a href="">SEASON 4</a>
+        <a href="">SEASON 3</a>
+        <a href="">SEASON 2</a>
+        <a href="">SEASON 1</a>
+    </nav>
+
+    <div class="content-container">
+        <h2>NEWS</h2>
+
+    </div>
+</body>
+</html>
